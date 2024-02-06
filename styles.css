@@ -1,0 +1,95 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f9b9b9;
+    line-height: 1.5;;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #8b0000;
+    background: linear-gradient(to top, #8b0000, pink);
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* Navigation styles */
+.nav, .subnav {
+    display: flex;
+    justify-content: center;
+    background-color: #8b0000;
+    padding: 10px;
+}
+
+.subnav { /*TODO: make this horizontal (table of contents style) */
+    margin-top: 40px;
+    background-color: #8b0000a3;
+}
+
+/* Style the tab buttons */
+.tablink, .subtablink {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover, .subtablink:hover {
+    background-color: #77777791;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent, .subtabcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    color: rgb(63, 5, 5);
+    display: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.tabcontent h1, .subtabcontent h1 {
+    color: #ffffff; 
+    margin-bottom: 20px;
+}
+
+.tabcontent p {
+    color: #130202; 
+    margin-bottom: 10px;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #8b0000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

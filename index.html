@@ -1,1 +1,30 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magdalena Jones Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Magdalena Jones Portfolio</h1>
+    </header>
+
+    <div class = "nav">
+        <button class="tablink" onclick="openPage('about', this)" id="defaultOpen">About Me</button>
+        <button class="tablink" onclick="openPage('projects', this)">Projects</button>
+        <button class="tablink" onclick="openPage('contact', this)">Contact</button>
+    </div>
+
+    <div id="about" class="tabcontent"></div>
+    <div id="projects" class="tabcontent"></div>  
+    <div id="contact" class="tabcontent"></div>  
+
+    <footer>
+        <p>&copy; 2022 Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
