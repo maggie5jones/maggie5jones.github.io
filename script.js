@@ -14,8 +14,8 @@ function openPage(pageName, elmnt) {
             document.getElementById(pageName).innerHTML = data;
         });
     document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = "rgba(128, 128, 128, 0.5)";
-}
+    elmnt.style.backgroundColor = "rgba(192, 0, 128, 0.5)";
+    }
 
 function openSubPage(pageName, elmnt) {
     var i, subtabcontent, subtablinks;
@@ -33,7 +33,7 @@ function openSubPage(pageName, elmnt) {
             document.getElementById(pageName).innerHTML = data;
         });
     document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = "rgba(128, 128, 128, 0.5)";
+    elmnt.style.backgroundColor = "rgba(192, 0, 128, 0.5)";
 }
 
 // Get the element with id="defaultOpen" and click on it
