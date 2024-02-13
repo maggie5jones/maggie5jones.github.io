@@ -8,10 +8,11 @@
 </head>
 <body>
     <header>
+        <img src="/assets/img/profile.jpeg" alt="Profile Image" class="profile-image">
         <h1 class="heading">Magdalena Jones</h1><p class="description">software engineer & game developer</p>
     </header>
 
-    <div class = "nav">
+    <!-- <div class = "nav">
         <button class="tablink" onclick="openPage('about', this)" id="defaultOpen">About Me</button>
         <button class="tablink" onclick="openPage('projects', this)">Projects</button>
         <button class="tablink" onclick="openPage('contact', this)">Contact</button>
@@ -19,13 +20,31 @@
 
     <div id="about" class="tabcontent"></div>
     <div id="projects" class="tabcontent"></div>  
-    <div id="contact" class="tabcontent"></div>  
+    <div id="contact" class="tabcontent"></div>   -->
 
-    <footer>
+    
+    <div class="grid-container">
+        <div class="widget" onclick="openLink('about.html')">
+          <img src="/assets/img/stock.jpeg" alt="Image 1">
+          <div class="textbox">Text Box 1</div>
+        </div>
+      
+        <div class="widget" onclick="openLink('projects.html')">
+          <img src="/assets/img/stock.jpeg" alt="Image 2">
+          <div class="textbox">Text Box 2</div>
+        </div>
+      
+        <div class="widget" onclick="openLink('contact.html')">
+            <img src="/assets/img/stock.jpeg">
+            <div class="textbox">Text Box 3</div>
+        </div>
+    </div>
+
+    <!-- <footer>
         <p>&copy; 2023 Magdalena Jones</p>
         <p>Pixel art from DeadlyEssence01 on Ko-Fi</p>
-    </footer>
-
+    </footer> -->
+    
     <script src="script.js"></script>
 </body>
 </html>

@@ -40,3 +40,7 @@ function openSubPage(pageName, elmnt) {
 window.onload = function() {
     document.getElementById("defaultOpen").click();
 }
+
+function openLink(url) {
+    window.location.href = url;
+}

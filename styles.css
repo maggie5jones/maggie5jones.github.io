@@ -1,6 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap');
 
 /*TODO: implement Bulma */
+.grid-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+  
+.widget {
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+  
+.widget img {
+    width: 100%;
+    height: auto;
+}
+  
+.textbox {
+    padding: 10px;
+    background-color: #c93864;
+    color: #fff;
+    font-style: bold;
+}
+.widget-image, .widget-textbox {
+    margin: 0;
+    padding: 0;
+}
+
+.widget {
+    transition: transform 0.3s;
+}
+
+.widget:hover {
+    transform: scale(1.05);
+}
 
 /* Reset default styles */
 body, h1, h2, h3, p, ul, li {
@@ -25,9 +63,11 @@ body {
 
 /* Header styles */
 header {
-    background-color: #000000a5;
+    background-color: #00000000;
     color: #fff;
     padding: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .heading {
@@ -35,6 +75,7 @@ header {
 }
 
 .description {
+    /* margin-bottom: 20px; */
     font-style: italic;
     font-size: 20px;
     color: #61042d;
@@ -111,7 +152,7 @@ footer p {
 }
 
 .profile-image {
-    float: left;
+    /* float: left; */
     width: 300px;
     height: 300px;
     border-radius: 75%;
@@ -119,6 +160,9 @@ footer p {
     shape-outside: circle();
     clip-path: circle();
     border: 2px solid #61042d;
+    display: block;
+    margin-top: 80px;
+    margin: 0 auto;
 }
 
 .about-text {
